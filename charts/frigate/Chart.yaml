@@ -1,0 +1,29 @@
+---
+apiVersion: v2
+appVersion: 0.10.0-amd64
+description: NVR With Realtime Object Detection for IP Cameras
+name: frigate
+version: 8.2.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - frigate
+  - nvr
+  - tensorflow
+  - coral
+  - ml
+  - machine-learning
+home: https://github.com/MoJo2600/charts/tree/master/charts/frigate
+icon: https://github.com/blakeblackshear/frigate/blob/master/docs/static/img/frigate.png
+sources:
+  - https://github.com/blakeblackshear/frigate
+maintainers:
+  - name: mojo2600
+    email: christian.erhardt@mojo2k.de
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.2.1
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 1.2.1
